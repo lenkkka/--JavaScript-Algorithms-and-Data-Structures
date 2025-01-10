@@ -1,7 +1,7 @@
-const character = "#";
-const count = 8;
+const character = "#"; // can change for example to '!'
+const count = 8; // can change for example to '10'
 const rows = [];
-let inverted = true;
+let inverted = true; // can switch between true and false
 // 'for' loop : for ("iterator"; "condition"; "iteration") {}
 // for (let i = 0; i < count; i = i + 1) {
 //     rows.push(character.repeat(i+1));

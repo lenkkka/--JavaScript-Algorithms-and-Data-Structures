@@ -193,3 +193,6 @@ function goFight() {
   monsterName.innerText = monsters[fighting].name;
   monsterHealthText.innerText = monsters[fighting].health;
 }
+
+function defeatMonster(){};
+function lose(){};

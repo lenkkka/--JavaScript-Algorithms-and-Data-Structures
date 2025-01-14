@@ -178,12 +178,10 @@ function buyWeapon() {
   } else {
     text.innerText = "You already have the most powerful weapon!";
     button2.innerText = "Sell weapon for 15 gold";
-    button2.onclick = sellWeapon();
+    button2.onclick = sellWeapon;
   }
 }
 
-function fightSlime() {}
-function fightBeast() {}
 function sellWeapon() {
   if (inventory.length > 1) {
     gold += 15;
@@ -248,8 +246,8 @@ function goFight() {
 function defeatMonster() {
   gold += Math.floor(monsters[fighting].level * 6.7);
   xp += monsters[fighting].level;
-  goldText.innerText = goldText;
-  xpText.innerText = xpText;
+  goldText.innerText = gold;
+  xpText.innerText = xp;
   update(locations[4]);
 }
 
@@ -269,7 +267,7 @@ function restart() {
   inventory = ["stick"];
   goldText.innerText = gold;
   healthText.innerText = health;
-  xpText.innerText = xpText;
+  xpText.innerText = xp;
   goTown();
 }
 
